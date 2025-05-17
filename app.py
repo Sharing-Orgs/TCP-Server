@@ -1,7 +1,7 @@
 import socket
 import json
 import os
-HOST, PORT = '127.0.0.1', 3396
+HOST, PORT = '0.0.0.0', 3396
 
 def send_http_response(connection_socket, status_code="200 OK", content_type="text/html", body=""):
     if isinstance(body, dict) and content_type == "application/json":
